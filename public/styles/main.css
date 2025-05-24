@@ -1,0 +1,269 @@
+html {
+  background-color: #e4e9fd;
+  background-image: -webkit-linear-gradient(65deg, #a683e3 50%, #e4e9fd 50%);
+  min-height: 1000px;
+  font-family: "helvetica neue";
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  min-height: 95vh;
+}
+main {
+  text-align: center;
+  flex: 1 0 auto;
+}
+h1 {
+  color: #fff;
+  padding: 10px;
+  font-size: 24px;
+}
+
+.box {
+  max-width: 400px;
+  margin: 50px auto;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+#heading {
+  background-color: #a683e3;
+  text-align: center;
+}
+form.edit {
+  display: flex;
+}
+
+.item {
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  /* border-bottom: 1px solid #f1f1f1; */
+  /* border-bottom: #a683e3 solid 1px; */
+}
+
+.item:last-child {
+  border-bottom: 0;
+}
+
+input[type="checkbox"] {
+  margin: 20px;
+  margin-left: 0;
+}
+
+p {
+  margin: 0;
+  padding: 20px 0;
+  font-size: 20px;
+  color: #00204a;
+}
+
+form {
+  margin-left: 20px;
+}
+
+button.add {
+  min-height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border-color: transparent;
+  background-color: #a683e3;
+  color: #fff;
+  font-size: 30px;
+  border-width: 0;
+}
+
+button.time {
+  min-height: 50px;
+  /* width: 50px; */
+  border-radius: 25%;
+  border-color: transparent;
+  background-color: #a683e3;
+  color: #fff;
+  font-size: 25px;
+  border-width: 0;
+  font-family: "helvetica neue";
+  font-weight:800;
+  padding: 0px 5px;
+}
+
+.top-button{
+display: flex;
+margin-top: 10px;
+height: 30px;
+}
+
+.login{
+  position: absolute;
+  left: 80%;  
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
+
+.option{
+  position: absolute;
+  left: 69vw;  
+  margin-top: 10px;
+  display: flex;
+}
+.list{
+  width: 70px;
+}
+
+button.edit {
+  margin-left: 0px;
+  margin-right: 20px;
+  border: none;
+  background: none;
+}
+
+.icon {
+  height: 20px;
+}
+
+input[type="text"] {
+  text-align: left;
+  height: 60px;
+  top: 10px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  font-weight: 200;
+  width: 80%;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  box-shadow: inset 0 -3px 0 0 #a683e3;
+}
+
+::placeholder {
+  color: lightgray;
+  opacity: 1;
+}
+
+footer {
+  flex: 0 0 auto;
+  color: white;
+  text-align: center;
+}
+
+
+
+.custom-box {
+  margin: 0 30vw;
+  margin-top: 10vw;
+  margin-bottom: 5vh;
+  border: solid black 1px;
+  border-radius: 50px;
+  /* background-color: rgb(238, 243, 194); */
+  background: white;
+  width: 40vw;
+  font-size: larger;
+  text-align: left;
+}
+
+.loginButton{
+  margin: 0 30vw;
+  width: 300px;
+  text-align: center;
+  min-height: 50px;
+  border-radius: 50px;
+  /* border-color: transparent; */
+  background-color: #a683e3;
+  color: #fff;
+  font-size: 40px;
+  border-width: 0;
+  margin-bottom: 5vh;
+}
+
+.media{
+  margin-top: 10vw;
+  margin-bottom: 5vh;
+  
+}
+.message{
+  background-color: rgba(255, 0, 0, 0.548);
+  border-radius: 10px;
+}
+
+.message_content{
+  padding-left: 5px;
+}
+
+.title{
+  width: 100%;
+  border-bottom: #a683e3 solid 1px;
+  text-align: left;
+}
+
+/* .icon{
+  padding-left: 10px;
+} */
+
+@media(max-width:700px){
+  .box {
+      max-width: 350px;
+      margin: 50px auto;
+      background: white;
+      border-radius: 5px;
+      box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+    }
+    .option{
+      left: 33%;
+    }
+    
+   .loginButton {
+     width: 200px;
+     /* margin-top: 10vw; */
+     /* margin-bottom: 5vh; */
+     text-align: center;
+     min-height: 50px;
+     border-radius: 50px;
+     /* border-color: transparent; */
+     background-color: #a683e3;
+     color: #fff;
+     font-size: 40px;
+     border-width: 0;
+     margin-left: 0;
+     
+    }
+    .media{
+      margin-left: 20vw;
+      padding-left: 5vw;
+      width: 75vw;
+      height: 80vh;
+     /* position: absolute;
+     top: 30%;
+     left: 1%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+   }
+
+     .custom-box {
+       margin: 0 0 0 10vw;
+       margin-top: 10vw;
+       margin-bottom: 5vh;
+       border: solid black 1px;
+       border-radius: 50px;
+       /* background-color: rgb(238, 243, 194); */
+       background: white;
+       width: 80vw;
+       font-size: larger;
+       /* text-align: left; */
+     }
+
+     .mobileView{
+      margin-left: 8vw;
+     }
+    .form{
+      text-align: center;
+     }
+}
+
+
